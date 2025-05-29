@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Мої плани на майбутнє</title>
+    <style>
+      :root {
+        --color-bg: #F4F5FF;
+        --color-text-main: #000080;
+        --color-text-header: #000080;
+        --color-primary: #FFFF00;
+        --color-button-blue: #0066CC; 
+        --wrapper-height: 100vh;
+        --font-family: "HK Grotesk";
+        --font-family-header: "HK Grotesk";
+      }
+     ul {
+    list-style: none; /* убираем стандартные маркеры */
+    padding-left: 0;  /* убираем отступ */
+    text-align: left; /* выравнивание по левому краю */
+    display: inline-block; /* чтобы список не растягивал всю ширину */
+    }  
+
+    ul li::before {
+    content: "★ ";
+    color: black;
+    margin-right: 8px;
+    }
+
+
+      body {
+        font-family: var(--font-family);
+        background-color: var(--color-bg);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+      }
+
+      .title {
+        color: var(--color-text-header);
+        font-family: var(--font-family-header);
+        font-weight: bold;
+        font-size: 50px;
+        margin: 20px 0;
+      }
+
+      .photo-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .profile-photo {
+        width: 70%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .photo-text {
+        font-size: 18px;
+        color: #555;
+        max-width: 600px;
+        margin: 10px auto;
+      }
+
+      a {
+        color: var(--color-text-main);
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .btn--blue-white {
+        font-family: HK Grotesk;
+        padding: 0.75rem 1rem;
+        font-size: 1.1rem;
+        line-height: 1rem;
+        font-weight: bold; 
+        height: 2.75rem;
+        align-items: center;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #000080; 
+        box-sizing: border-box;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #000080; 
+        white-space: nowrap;
+        margin-left: auto;
+        display: block;
+        margin: 20px auto; 
+      }
+
+      .btn--blue-white:hover {
+        background-color: #F0F0F0; 
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <h1 class="title">Мої плани на майбутнє</h1>
+
+        <div class="photo-container">
+          <img 
+            src="https://cdn.glitch.global/592019c1-792c-4ba0-8e88-74242be67585/photo_2025-04-02_22-46-28.jpg?v=1743623236778" 
+            alt="Мої інтереси" 
+            class="interest-photo"
+          />
+        </div>
+
+        <p class="photo-text">
+          <ul>
+            <li> Побудувати кар'єру в IT </li>
+            <li> Закінчити бакалаврат з хорошими оцінками </li>
+            <li> Покращити навички програмування </li>
+            <li> Отримати першу роботу або стажування в ІТ </li>
+            <li> Відвідати кілька нових країн або міст </li>
+          </ul>
+        </p>
+        <a href="index.html" class="btn--blue-white">Повернутись до біографії</a>
+      </div>
+    </div>
+  </body>
+</html>
