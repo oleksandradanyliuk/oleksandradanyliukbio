@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Про мене</title>
+    <style>
+      :root {
+        --color-bg: #F4F5FF;
+        --color-text-main: #000080;
+        --color-text-header: #000080;
+        --color-primary: #FFFF00;
+        --color-button-blue: #0066CC; 
+        --wrapper-height: 100vh;
+        --font-family: "HK Grotesk";
+        --font-family-header: "HK Grotesk";
+      }
+
+      body {
+        font-family: var(--font-family);
+        background-color: var(--color-bg);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+      }
+
+      .title {
+        color: var(--color-text-header);
+        font-family: var(--font-family-header);
+        font-weight: bold;
+        font-size: 50px;
+        margin: 20px 0;
+      }
+
+      .photo-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .profile-photo {
+        width: 70%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .photo-text {
+        font-size: 18px;
+        color: #555;
+        max-width: 600px;
+        margin: 10px auto;
+      }
+
+      a {
+        color: var(--color-text-main);
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .btn--blue-white {
+        font-family: HK Grotesk;
+        padding: 0.75rem 1rem;
+        font-size: 1.1rem;
+        line-height: 1rem;
+        font-weight: bold; 
+        height: 2.75rem;
+        align-items: center;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #000080; 
+        box-sizing: border-box;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #000080; 
+        white-space: nowrap;
+        margin-left: auto;
+        display: block;
+        margin: 20px auto; 
+      }
+
+      .btn--blue-white:hover {
+        background-color: #F0F0F0; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Моя Біографія</h1>
+      <div class="photo-container">
+        <img 
+          src="https://cdn.glitch.global/2926718a-b480-4fea-9046-fa0d3fceb880/photo_2025-02-27_14-45-01.jpg?v=1740660361151" 
+          alt="Моє фото" 
+          class="profile-photo"
+        />
+      </div>
+      <p class="photo-text">
+        Мене звати Олександра, мені 19 років. Я навчаюсь у ОНУ ім. Мечникова на спеціальності "Прикладна математика". 
+        Я закінчила Одеській ліцей №118 у 2023 році. Також у 2024 році я закінчила Канадську школу Matrix. 
+        Під час мого навчання у школі мені подобалась математика та фізика, та я не була дуже зацікавлена в інших предметах, через це і обрала спеціальність у цьому напрямку.
+      </p>
+      <a href="plans.html" class="btn--blue-white">Мої плани на майбутнє</a>
+    </div>
+  </body>
+</html>
